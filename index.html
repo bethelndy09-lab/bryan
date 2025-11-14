@@ -37,7 +37,7 @@
         </div>
     </header>
         <!--..............................................main........................................-->
-    <main class="pt-[60px] pl-10"> 
+    <main class="pt-[60px] pl-"> 
         <section class="flex justify-around gap-8 pt-2">    
             <div class="text-[red] gap-10">
                 <p class="text-2xl font-bold">
@@ -67,12 +67,14 @@
                 <img src="/image/cruch.webp" alt="" class="w-[600px] mb-[198]">
             </div>
         </section>
-        <button class="bg-[red] text-white rounded-lg px[15px] py[3px] fixed bottom-4 right-4">Earn Loyalty Pionts</button>
-        <section class="pt-10 pr-7 flex flex-col items-center justify-center gap-4">
-            <h1 class="text-[red] font-bold text-4xl text-center">Discover Our Menu</h1>
-            <hr class="w-40 text-[red] border-4 rounded-full">
+        <button class="bg-[red] text-white rounded-3xl px[15px] py[3px] fixed bottom-4 right-4 h-10 w-50">
+            <i class="bi bi-patch-check"></i>Earn Loyalty Pionts
+        </button>
+        <section class="pt-10 pr-7 flex flex-col items-center justify-center gap-2">
+            <h1 class="text-[red] font-bold text-4xl text-center mb-1">Discover Our Menu</h1>
+            <hr class="w-30 text-[red] border-4 rounded-full mb-5 ">
         </section>
-        <section class="grid grid-cols-3 gap-10 pb-10">
+        <section class="grid grid-cols-3 gap-10 pb-10 pl-10 pr-10">
             <div class="bg-[url('/image/Food-min_zhoyip.jpg')] bg-cover rounded-2xl">
                 <p class="text-white text-4xl mt-[] w-52 h-52">Rice</p>
             </div>
@@ -98,9 +100,6 @@
             </button>
         </div>
     </section>
-    <div class="flex fixed justify-end mr-7 mb-10 border-0 right-0">
-         <button class="bg-[red] text-white rounded-lg w-40 h-8"><i class="bi        bi-patch-check"></i>Earn loyalty point</button>
-    </div>
     <section class="h-88 bg-[red] bg-cover flex justify-center">
         <div class="bg-[url('/image/seee-removebg-preview.png')] bg-cover w-75"></div>
             <div class="flex flex-col justify-center  text-white pl-10">
@@ -117,19 +116,76 @@
                </div> 
             </div>
     </section>
-    <section class="">
-        <h1 class="text-[red] text-center text-5xl font-bold border mt-30">About Us</h1>
-        <hr class="w-40 text-[red] border-4 rounded-full ">
-        <div class="flex">
-        <div class="w-[50%] ">
-        <aside>
-            Crunchies Fried Chicken is a first-grade quick service restaurant that offers a variety of quality fast food products and first-class services. We are currently spread across the South-South, South-East and South-West regions of Nigeria, with over 20 years of experience.
+    <section class="flex flex-col items-center">
+        <h1 class="text-[red] text-center text-5xl font-bold mt-30 mb-3">About Us</h1>
+        <hr class="w-15 text-[red] border-4 rounded-full mb-19 ">
+        <div class="flex  gap-15 mx-20 mb-36">
+            <div class="">
+                <p class="w-110">
+                    Crunchies Fried Chicken is a first-grade quick service restaurant that offers a variety of quality fast food products and first-class services. We are currently spread across the South-South, South-East and South-West regions of Nigeria, with over 20 years of experience. <br> <br>
 
-             We have carved the niche of excellence in the fast food market with a service per excellence acquired from interacting with our valued customers.
-        </aside>
-        <button class="bg-[red] text-white w-30 h-8 font-bold rounded-lg "><i class="bi bi-chevron-bar-down"></i>Read More</button>
+                    We have carved the niche of excellence in the fast food market with a service per excellence acquired from interacting with our valued customers.
+                </p>
+                <button class="bg-[red] text-white w-30 h-8 font-bold rounded-lg mt-7"><i class="bi bi-chevron-bar-down"></i>Read More</button>
+            </div>
+            <img src="/image/About_US-min.webp" class="h-100 w-130 rounded-2xl" alt="a picture of the front of crunchies">
         </div>
-        <img src="/image/About_US-min.webp" class="h-52 w-40" alt="">
+    </section> 
+    <section class="flex flex-col items-center justify-center bg-pink-200 gap-10">
+        <div class="flex flex-row">
+            <img src="/image/OFFERS-min.webp" class="w-100 h-100">
+            <img src="/image/FANCLUB-min.webp" class="w-100 h-100" alt="">
+        </div>
+        <div class="flex flex-row">
+            <img src="/image/CAREERS-min.webp" class="w-100 h-100" alt="">
+            <img src="/image/blog-min.webp" class="w-100 h-100" alt="">
+        </div>    
+    </section>
+    <section class="bg-pink-100 pb-15 flex flex-col items-center">
+        <div class="flex justify-center">
+            <img src="/image/Newsletter-min.webp" class="w-52 h-52 rounded-full" alt="">
+        </div>
+        <p class="text-3xl text-center font-bold pt-10">Subscribe to our Newsletter</p>
+        <p class="text-center pt-5">Be the first to get lucky on our amazing offers</p>
+        <div class="bg-white flex  rounded-2xl h-15 mt-6 mb-24 w-[670px] border">
+            <form class=" " >
+                <input type="email" placeholder="Email Address" class='w-[520px] pl-1 pt-3'>
+            </form>
+            <button class="bg-[red] text-white rounded-3xl w-40 h-15 ">Subscribe Now</button>
+        </div>
+    </section>
+    <section class="flex flex-row bg-[red] pb-0 gap-30">
+        <div class="text-white">
+            <img src="/image/logo-white.webp" class="w-50" alt="">
+            <h3 class="text-3xl text-white font-bold pt-8 pb-4">Opening Hours</h3>
+            <p>Mondays to Sundays <br>
+                7:00 AM to 9:00PM
+            </p>
+            <p class="font-bold text-3xl pt-10 pb-5">Contact Us</p>
+            <p>customercare@crunchiesonline.com</p>    
+            <p class="pt-3">09062439146, 08098242522</p>    
+        </div>
+        <div class="text-white">
+            <h2 class="text-3xl font-bold pt-9">Quick Navigation</h2>
+            <p>Careers</p>
+            <p>Fan Club</p>
+            <p>Offers</p>
+            <p>Privacy Policy</p>
+            <p>Terms and Conditions</p>
+            <p class="font-bold text-3xl pt-10">Find Us Here</p>
+            <p>
+                <i class="bi bi-instagram"></i>
+                <i class="bi bi-facebook"></i>
+                <i class="bi bi-linkedin"></i>
+                <i class="bi bi-twitter-x"></i>
+                <i class="bi bi-tiktok"></i>
+            </p>
+        </div>
+        <div class="text-white">
+            <h2 class="pt-9 text-3xl font-bold">Tells us how we're doing...</h2>
+            <p class="pt-10">Your feedback is valuable to us.</p>
+            <button class="bg-white text-[red] rounded-3xl mt-10 h-15 w-50">Submit feedback<i class="bi bi-stars"></i> </button>
+
         </div>
     </section>
 
