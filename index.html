@@ -17,7 +17,7 @@
             <i class="bi bi-geo-alt text-[red]"></i>
             <p>Set location</p>
         </div>
-        <nav class="flex gap-7 font-semibold ">
+        <nav class="lg:flex gap-7 font-semibold hidden ">
             <a class="text-[red]" href="">Home</a>
             <a href="">Offers</a>
             <a href="">Fan Club</a>
@@ -26,24 +26,38 @@
             <a href="">My Account</a>
             <a href="">Support</a>
         </nav>
-        <button class="bg-[red] text-white p-3 w-45 rounded-2xl font-bold">
+        <button class="bg-[red] text-white p-3 w-45 rounded-2xl  font-bold">
             Order Now
         </button>
         <div class="">
             <i class="bi bi-cart3 text-[red]"></i>
         </div>
         <div>
-            <button><i class="bi bi-list"></i></button>
+            <button>
+                <i class="bi bi-list">
+                <select name="" id="" class=" bi bi-list grid grid-cols-2 md:hidden">
+            
+                    <option value=""><a class="text-[red]" href="">Home</a></option>
+                    <option value=""><a href="">Offers</a></option>
+                    <option value=""><a href="">Fan Club</a></option>
+                    <option value=""><a href="">Blog</a></option>
+                    <option value=""><a href="">About Us</a></option>
+                    <option value=""><a href="">My Account</a></option>
+                    <option value=""><a href="">Support</a></option>
+                </select>
+                </i>
+
+            </button>
         </div>
     </header>
         <!--..............................................main........................................-->
-    <main class="pt-[60px] pl-"> 
-        <section class="flex justify-around gap-8 pt-2">    
+    <main class="pt-[60px]"> 
+        <section class="flex flex-col pl-3 sm:pl-2 sm:flex-row justify-around gap-8 pt-2">    
             <div class="text-[red] gap-10">
-                <p class="text-2xl font-bold">
+                <p class="text-2xl font-bold text-center sm:text-start">
                     Welcome to CRUNCHIES!
                 </p>
-                <h1 class="text-8xl font-bold pt-2">
+                <h1 class="md:text-8xl font-bold pt-2 text-4xl ">
                     Taste the <br>
                     Difference...
                 </h1>
@@ -74,7 +88,7 @@
             <h1 class="text-[red] font-bold text-4xl text-center mb-1">Discover Our Menu</h1>
             <hr class="w-30 text-[red] border-4 rounded-full mb-5 ">
         </section>
-        <section class="grid grid-cols-3 gap-10 pb-10 pl-10 pr-10">
+        <section class="grid sm:grid-cols-3 grid-cols-1 gap-10 pb-10 pl-10 pr-10">
             <div class="bg-[url('/image/Food-min_zhoyip.jpg')] bg-cover rounded-2xl">
                 <p class="text-white text-4xl mt-[] w-52 h-52">Rice</p>
             </div>
@@ -100,9 +114,9 @@
             </button>
         </div>
     </section>
-    <section class="h-88 bg-[red] bg-cover flex justify-center">
-        <div class="bg-[url('/image/seee-removebg-preview.png')] bg-cover w-75"></div>
-            <div class="flex flex-col justify-center  text-white pl-10">
+    <section class="min-h-88 min-w-screen bg-[red] flex flex-col sm:flex-row sm:justify-center items-center">
+        <div class="bg-[url('/image/seee-removebg-preview.png')] bg-cover sm:w-75 w-screen sm:h-85 h-[500px]"></div>
+            <div class="flex flex-col justify-center w-[90vw] sm:w-85 text-white items-center sm:pl-10">
                 <p class="font-bold text-5xl">order on the <br>
                  Go!
                </p><br>
@@ -119,7 +133,7 @@
     <section class="flex flex-col items-center">
         <h1 class="text-[red] text-center text-5xl font-bold mt-30 mb-3">About Us</h1>
         <hr class="w-15 text-[red] border-4 rounded-full mb-19 ">
-        <div class="flex  gap-15 mx-20 mb-36">
+        <div class="flex flex-col-reverse sm:flex-row  gap-15 mx-20 mb-36">
             <div class="">
                 <p class="w-110">
                     Crunchies Fried Chicken is a first-grade quick service restaurant that offers a variety of quality fast food products and first-class services. We are currently spread across the South-South, South-East and South-West regions of Nigeria, with over 20 years of experience. <br> <br>
@@ -132,11 +146,11 @@
         </div>
     </section> 
     <section class="flex flex-col items-center justify-center bg-pink-200 gap-10">
-        <div class="flex flex-row">
+        <div class="flex flex-col mt-10 sm:flex-row sm:gap-5 sm:mt-20">
             <img src="/image/OFFERS-min.webp" class="w-100 h-100">
             <img src="/image/FANCLUB-min.webp" class="w-100 h-100" alt="">
         </div>
-        <div class="flex flex-row">
+        <div class="flex flex-col mb-10 sm:flex-row sm:gap-5 sm:mb-20">
             <img src="/image/CAREERS-min.webp" class="w-100 h-100" alt="">
             <img src="/image/blog-min.webp" class="w-100 h-100" alt="">
         </div>    
@@ -147,16 +161,15 @@
         </div>
         <p class="text-3xl text-center font-bold pt-10">Subscribe to our Newsletter</p>
         <p class="text-center pt-5">Be the first to get lucky on our amazing offers</p>
-        <div class="bg-white flex  rounded-2xl h-15 mt-6 mb-24 w-[670px]">
-            <form class=" " >
-                <input type="email" placeholder="Email Address" class='w-[520px] pl-1 pt-3'>
-            </form>
-            <button class="bg-[red] text-white rounded-3xl w-40 h-15 ">Subscribe Now</button>
+        <div class="sm:bg-white bg-transparent sm:rounded-2xl  sm:ml-40 flex gap-6 items-center flex-col sm:h-15 mt-6 mb-24 w-[670px] sm:flex-row sm:gap-0 sm:items-start">
+            <input type="email" placeholder="Email Address"  class='bg-white rounded-3xl sm:rounded-none sm:bg-transparent h-[50px] sm:w-[520px] w-[90vw] pl-1 pt-3'>
+            <button class="bg-[red] text-white rounded-3xl sm:w-40 w-[90vw] sm:h-15 h-[50px]">Subscribe Now</button>
         </div>
     </section>
-    <section class="flex flex-row bg-[red] pb-0 gap-30">
+    <!-- ..............................Footer.......................................... -->
+    <section class="flex flex-col text-center md:text-start md:flex-row bg-[red] pb-10 gap-30">
         <div class="text-white">
-            <img src="/image/logo-white.webp" class="w-50" alt="">
+            <img src="/image/logo-white.webp" class="w-50 ml-24 sm:ml-0" alt="">
             <h3 class="text-3xl text-white font-bold pt-8 pb-4">Opening Hours</h3>
             <p>Mondays to Sundays <br>
                 7:00 AM to 9:00PM
